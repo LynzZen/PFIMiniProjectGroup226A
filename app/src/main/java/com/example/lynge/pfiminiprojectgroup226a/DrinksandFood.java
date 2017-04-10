@@ -11,7 +11,10 @@ public class DrinksandFood {
     String Fanta = "Fanta";
     String Sprite = "Sprite";
     String ScheweppesLemon = "ScheweppesLemon";
-
+    String Spaghetti = "Spaghetti";
+    String Burger = "Burger";
+    String Pizza = "Pizza";
+    String FrenchFries  = "FrenchFries";
     public DrinksandFood(){}
 
 }
