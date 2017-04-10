@@ -5,4 +5,13 @@ package com.example.lynge.pfiminiprojectgroup226a;
  */
 
 public class DrinksandFood {
+
+    String Cola = "Cola";
+    String ColaZero = "ColaZero";
+    String Fanta = "Fanta";
+    String Sprite = "Sprite";
+    String ScheweppesLemon = "ScheweppesLemon";
+
+    public DrinksandFood(){}
+
 }
