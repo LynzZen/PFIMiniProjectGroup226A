@@ -17,4 +17,24 @@ public class DrinksandFood {
     String FrenchFries  = "FrenchFries";
     public DrinksandFood(){}
 
+    public String DrinksandFood(int i){
+        if (i == 1){
+            return Cola;
+        }
+        else if (i == 2){
+            return ColaZero;
+        }
+        else if (i == 3){
+            return Fanta;
+        }
+        else if (i == 4){
+            return Sprite;
+        }
+        else if(i == 5){
+            return ScheweppesLemon;
+        }
+
+        return null;
+    }
+
 }
