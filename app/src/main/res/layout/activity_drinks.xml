@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lynge.pfiminiprojectgroup226a.DrinksActivity">
+
+    <Button
+        android:id="@+id/ColaZeroBut"
+        android:layout_width="222dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="98dp"
+        android:onClick="ColaZero"
+        android:text="Cola Zero"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/FantaBut"
+        android:layout_width="222dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="184dp"
+        android:onClick="Fanta"
+        android:text="Fanta"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/LemonBut"
+        android:layout_width="222dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="274dp"
+        android:onClick="Lemon"
+        android:text="Lemon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/SpriteBut"
+        android:layout_width="222dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="362dp"
+        android:onClick="Sprite"
+        android:text="Sprite Zero"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ColaBut"
+        android:layout_width="222dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:onClick="Cola"
+        android:text="Cola"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="14dp" />
+</android.support.constraint.ConstraintLayout>
