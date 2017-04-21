@@ -35,13 +35,13 @@ public class MainActivity extends AppCompatActivity {
 
         String DrinkShow = orderTable1.GetDrink();
         String FoodShow = orderTable1.GetFood();
-        String dbString = mDBHandler.databaseToString();
+
 
 
 
     String ShowOrder = "Drink: "+ DrinkShow + "\nFood: " + FoodShow;
         if (DrinkShow != "" && FoodShow != "" ){
-        ShowOrderTextDrink.setText(dbString);
+        ShowOrderTextDrink.setText(ShowOrder);
 
         }
 
@@ -52,5 +52,6 @@ public class MainActivity extends AppCompatActivity {
     public void ClearOrder(View view){
         orderTable1.SetFood("");
         orderTable1.SetDrink("");
+        ShowOrder(null);
     }
 }
