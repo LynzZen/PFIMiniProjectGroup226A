@@ -7,11 +7,18 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    DataBaseHandler mDBHandler;
+    public static Order orderTable1 = new Order();
+    public Order orderTable2 = new Order();
+    public Order orderTable3 = new Order();
+    public Order orderTable4 = new Order();
+    public Order orderTable5 = new Order();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mDBHandler = new DataBaseHandler(this, null, null,1);
 
     }
 
@@ -24,19 +31,26 @@ public class MainActivity extends AppCompatActivity {
 
     public void ShowOrder(View view){
         TextView ShowOrderTextDrink = (TextView) findViewById(R.id.ShowOrderTextView);
-        TextView ShowOrderTextFood = (TextView) findViewById(R.id.ShowOrderTextView2);
-        String DrinkShow = DrinksActivity.Drinks;
-        String FoodShow = FoodActivity.Food;
+        TextView TextString = (TextView) findViewById(R.id.ShowOrderTextView2);
 
+        String DrinkShow = orderTable1.GetDrink();
+        String FoodShow = orderTable1.GetFood();
+        String dbString = mDBHandler.databaseToString();
+
+
+
+    String ShowOrder = "Drink: "+ DrinkShow + "\nFood: " + FoodShow;
         if (DrinkShow != "" && FoodShow != "" ){
-        ShowOrderTextDrink.setText("Drink: " + DrinkShow);
-            ShowOrderTextFood.setText("Food: " + FoodShow);
+        ShowOrderTextDrink.setText(dbString);
 
         }
 
        else{
             ShowOrderTextDrink.setText("No order to show");
         }
-
+    }
+    public void ClearOrder(View view){
+        orderTable1.SetFood("");
+        orderTable1.SetDrink("");
     }
 }

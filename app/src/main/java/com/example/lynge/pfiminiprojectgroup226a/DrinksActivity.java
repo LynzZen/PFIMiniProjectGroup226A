@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 
 public class DrinksActivity extends AppCompatActivity {
-    public static String Drinks = "";
 
 
     @Override
@@ -17,33 +16,31 @@ public class DrinksActivity extends AppCompatActivity {
     }
 
     public void Cola (View view){
-        Drinks = "Cola";
+        MainActivity.orderTable1.SetDrink("Cola");
         OpenFood();
     }
 
     public void ColaZero (View view){
-        Drinks = "Cola Zero";
+        MainActivity.orderTable1.SetDrink("Cola Zero");
         OpenFood();
     }
 
     public void Fanta (View view){
-        Drinks = "Fanta";
+        MainActivity.orderTable1.SetDrink("Fanta");
         OpenFood();
     }
 
     public void Lemon (View view){
-        Drinks = "Lemon";
+        MainActivity.orderTable1.SetDrink("Lemon");
         OpenFood();
     }
 
     public void Sprite (View view){
-       Drinks = "Sprite";
+        MainActivity.orderTable1.SetDrink("Sprite");
         OpenFood();
     }
 
-    public String GetDrinks(){
-        return Drinks;
-    }
+
 
 
     void OpenFood(){

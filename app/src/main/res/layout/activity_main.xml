@@ -6,6 +6,21 @@
     android:layout_height="match_parent"
     tools:context="com.example.lynge.pfiminiprojectgroup226a.MainActivity">
 
+    <Button
+        android:id="@+id/ClearOrderBut"
+        android:layout_width="243dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="ClearOrder"
+        android:text="ClearOrder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43"/>
+
     <TextView
         android:id="@+id/ShowOrderTextView2"
         android:layout_width="wrap_content"
@@ -17,7 +32,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.453" />
+        app:layout_constraintVertical_bias="0.606" />
 
     <Button
         android:id="@+id/ShowOrderBut"
@@ -60,6 +75,6 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.397" />
+        app:layout_constraintVertical_bias="0.55" />
 
 </android.support.constraint.ConstraintLayout>

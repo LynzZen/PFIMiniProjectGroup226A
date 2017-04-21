@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class FoodActivity extends AppCompatActivity {
-    public static String Food = "";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -14,12 +14,12 @@ public class FoodActivity extends AppCompatActivity {
     }
 
     public void Pasta(View view){
-        Food = "Pasta";
+        MainActivity.orderTable1.SetFood("Pasta");
         ReturnHome();
         }
 
     public void Burger(View view){
-        Food = "Burger";
+        MainActivity.orderTable1.SetFood("Burger");
         ReturnHome();
     }
 
