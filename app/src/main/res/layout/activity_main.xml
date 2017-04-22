@@ -12,21 +12,23 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="@string/app_name"
+        android:text="@string/Password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Password" />
+        tools:text="Password"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintVertical_bias="0.559" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="192dp"
+        android:layout_marginTop="250dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="@string/"
+        android:text="@string/ID"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -37,41 +39,45 @@
         android:id="@+id/button"
         android:layout_width="216dp"
         android:layout_height="48dp"
+        android:layout_marginTop="340dp"
         android:background="@color/colorPrimaryDark"
-        android:text="@string/app_name"
+        android:text="@string/Login"
         android:textColor="@android:color/background_light"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:text="LOGIN"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="310dp" />
+        tools:text="LOGIN" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="189dp"
         android:layout_height="165dp"
-        android:text="@string/app_name"
+        android:layout_marginTop="400dp"
+        android:text="@string/ASS"
         android:textSize="10sp"
         app:layout_constraintHorizontal_bias="0.569"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:text="Dont have an account? Register here"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="370dp" />
+        tools:text="Dont have an account? Register here" />
 
     <android.support.constraint.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/guideline2"
         app:layout_constraintGuide_begin="20dp"
-        android:orientation="vertical" />
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="20dp" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/motherfuckingplaneianimated"
-        tools:layout_editor_absoluteY="-53dp"
-        tools:layout_editor_absoluteX="85dp" />
+        android:id="@+id/imageView6"
+        android:layout_width="166dp"
+        android:layout_height="74dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/picture"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="146dp" />
 
 </android.support.constraint.ConstraintLayout>
