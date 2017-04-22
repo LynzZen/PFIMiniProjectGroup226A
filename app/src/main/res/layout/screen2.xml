@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lynge.pfiminiprojectgroup226a.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="216dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="122dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/table1"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Table 1" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="141dp"
+        android:layout_height="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/picture"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="-3dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="216dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="186dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/table2"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Table 2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="216dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="249dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/table3"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Table 3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="216dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="313dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/table4"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Table 4" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="216dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="374dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/table5"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Table 5" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="76dp"
+        android:layout_height="38dp"
+        android:text="@string/logout"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:text="Log out" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline3"
+        app:layout_constraintGuide_begin="45dp"
+        android:orientation="horizontal" />
+
+</android.support.constraint.ConstraintLayout>
