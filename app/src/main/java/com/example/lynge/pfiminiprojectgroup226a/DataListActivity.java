@@ -11,14 +11,14 @@ public class DataListActivity extends AppCompatActivity {
     SQLiteDatabase mSQLiteDatabase;
     DataBaseHandler mDataBaseHandler;
     Cursor cursor;
-    ListDataAdapter mListDataAdapter;
+    DataListAdapter mDataListAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.order_list_layout);
         mListView = (ListView) findViewById(R.id.listView);
-        mListDataAdapter = new ListDataAdapter(getApplicationContext(),R.layout.row_layout);
-        mListView.setAdapter(mListDataAdapter);
+        mDataListAdapter = new DataListAdapter(getApplicationContext(),R.layout.row_layout);
+        mListView.setAdapter(mDataListAdapter);
         mDataBaseHandler = new DataBaseHandler(getApplicationContext());
         mSQLiteDatabase = mDataBaseHandler.getReadableDatabase();
         cursor = mDataBaseHandler.getInformation(mSQLiteDatabase);
@@ -30,7 +30,7 @@ public class DataListActivity extends AppCompatActivity {
                 drink = cursor.getString(1);
                 food = cursor.getString(2);
                 DataProvider mdataProvider = new DataProvider(tableNumber,drink,food);
-                mListDataAdapter.add(mdataProvider);
+                mDataListAdapter.add(mdataProvider);
             }
             while (cursor.moveToNext());
         }

@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class DrinksAndFoodActivity extends AppCompatActivity {
+    //Declaring
     EditText Drink, Food, Table;
     TextView TextPerson;
     int i = 1;
@@ -20,11 +21,12 @@ public class DrinksAndFoodActivity extends AppCompatActivity {
     SQLiteDatabase mSQLiteDatabase;
 
 
-
+    //On create (when made)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drinksandfood);
+       //initializing tge Edittexts and the text view
         Drink = (EditText) findViewById(R.id.DrinkTextEdit);
         Food = (EditText) findViewById(R.id.FoodTextEdit);
         Table = (EditText) findViewById(R.id.TableNumberTextEdit);
@@ -32,7 +34,9 @@ public class DrinksAndFoodActivity extends AppCompatActivity {
         TextPerson.setText("Person "+i);
 
     }
-
+    //If the Add order button is clicked
+    //The if function will look for if there is no text in strings
+    //If there is it will add a new line and then put the text
     public void addOrder(View view){
 
         if(drink != null && food !=null && table !=null) {
@@ -47,6 +51,7 @@ public class DrinksAndFoodActivity extends AppCompatActivity {
         }
         Drink.setText("");
         Food.setText("");
+
         i++;
         TextPerson.setText("Person "+i);
 

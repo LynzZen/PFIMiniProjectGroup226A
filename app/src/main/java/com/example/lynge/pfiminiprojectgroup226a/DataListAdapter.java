@@ -17,9 +17,9 @@ import java.util.List;
  * Created by Lynge on 21-04-2017.
  */
 
-public class ListDataAdapter extends ArrayAdapter {
+public class DataListAdapter extends ArrayAdapter {
     List mList = new ArrayList();
-    public ListDataAdapter(@NonNull Context context, @LayoutRes int resource) {
+    public DataListAdapter(@NonNull Context context, @LayoutRes int resource) {
         super(context, resource);
     }
 
