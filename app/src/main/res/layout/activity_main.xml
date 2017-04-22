@@ -23,15 +23,15 @@
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="@string/app_name"
+        android:text="@string/"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:text="ID"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="192dp" />
+        tools:text="ID" />
 
     <Button
         android:id="@+id/button"
