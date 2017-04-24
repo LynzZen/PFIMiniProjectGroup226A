@@ -78,19 +78,6 @@
         tools:text="Table 4" />
 
     <Button
-        android:id="@+id/button6"
-        android:layout_width="216dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="374dp"
-        android:background="@color/colorPrimaryDark"
-        android:text="@string/table5"
-        android:textColor="@android:color/background_light"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="Table 5" />
-
-    <Button
         android:id="@+id/button7"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="76dp"
