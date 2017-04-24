@@ -54,7 +54,7 @@
         android:id="@+id/imageView"
         android:layout_width="72dp"
         android:layout_height="176dp"
-        app:srcCompat="@drawable/coca_cola_PNG8899"
+        app:srcCompat="@drawable/coca_cola_png8899"
         tools:layout_editor_absoluteY="113dp"
         tools:layout_editor_absoluteX="56dp" />
 

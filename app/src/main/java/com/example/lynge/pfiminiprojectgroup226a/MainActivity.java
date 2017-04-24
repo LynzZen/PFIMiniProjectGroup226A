@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DrinksAndFoodActivity.class);
         startActivity(intent);
     }
-
+    //If the  button is clicked:
     public void ShowOrders(View view){
         Intent intent = new Intent(this, DataListActivity.class);
         startActivity(intent);
