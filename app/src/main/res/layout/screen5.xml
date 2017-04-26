@@ -28,20 +28,21 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="216dp"
+        android:layout_width="126dp"
         android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:background="@color/colorPrimaryDark"
         android:onClick="skip"
         android:text="@string/Skip"
         android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926"
         tools:text="Skip"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.914" />
+        app:layout_constraintHorizontal_bias="0.217" />
 
     <Button
         android:id="@+id/button7"
@@ -109,21 +110,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.152" />
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="272dp"
-        android:layout_height="121dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Additional comments"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintVertical_bias="0.758" />
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="136dp"
@@ -139,5 +125,36 @@
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintHorizontal_bias="0.07" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="126dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="add"
+        android:text="@string/add"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.782"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.926"
+        tools:text="Add" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="215dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Additionalcomments"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        android:layout_marginTop="288dp" />
 
 </android.support.constraint.ConstraintLayout>
