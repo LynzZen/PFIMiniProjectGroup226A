@@ -23,7 +23,7 @@ public class AddDrinkActivity extends AppCompatActivity implements AdapterView.O
     }
 
     public void skip(View view) {
-        OrderHandleActivity.Drink = "Cola 0.5l";
+        OrderHandleActivity.Drink += "Cola 0.5l"+"\n";
         Intent intent = new Intent(this, AddFoodActivity.class);
         startActivity(intent);
     }
