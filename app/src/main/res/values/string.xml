@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drink_type_array">
+        <item>Cola</item>
+        <item>Cola Zero</item>
+        <item>Fanta</item>
+        <item>Sprite</item>
+        <item>Lemon</item>
+    </string-array>
+
+    <string-array name="drink_size_array">
+        <item>0.25 l.</item>
+        <item>0.50 l.</item>
+        <item>0.75 l.</item>
+    </string-array>
+
+
+
+
+</resources>

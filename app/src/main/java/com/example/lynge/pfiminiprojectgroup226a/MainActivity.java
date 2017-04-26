@@ -11,13 +11,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.screen6);
 
 
     }
     //If the Add button is clicked:
     public void AddOrder(View view){
-        Intent intent = new Intent(this, DrinksAndFoodActivity.class);
+        Intent intent = new Intent(this, AddDrinkActivity.class);
         startActivity(intent);
     }
     //If the  button is clicked:
