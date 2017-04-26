@@ -54,7 +54,7 @@ public class AddDrinkActivity extends AppCompatActivity implements AdapterView.O
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         String item = parent.getItemAtPosition(position).toString();
-        Toast.makeText(parent.getContext(),item,Toast.LENGTH_SHORT).show();
+        //Toast.makeText(parent.getContext(),item,Toast.LENGTH_SHORT).show();
     }
 
     @Override

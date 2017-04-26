@@ -45,7 +45,7 @@
         android:layout_marginTop="8dp"
         android:background="@color/colorPrimaryDark"
         android:onClick="AddOrder"
-        android:text="Place new order"
+        android:text="Start new order"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
