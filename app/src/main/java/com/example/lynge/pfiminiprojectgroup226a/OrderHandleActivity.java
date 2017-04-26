@@ -10,7 +10,7 @@ import android.view.View;
  */
 
 public class OrderHandleActivity extends AppCompatActivity {
-    static String Drink,Food,TableNumber;
+    static String Drink,Food,TableNumber = "";
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_handle);
@@ -20,6 +20,7 @@ public class OrderHandleActivity extends AppCompatActivity {
     public void FinishOrder(View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+
     }
 
     public void NextPerson(View view){
