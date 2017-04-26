@@ -10,9 +10,11 @@ import android.view.View;
  */
 
 public class OrderHandleActivity extends AppCompatActivity {
+    static String Drink,Food,TableNumber;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_handle);
+
     }
 
     public void FinishOrder(View view){
@@ -20,4 +22,9 @@ public class OrderHandleActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void NextPerson(View view){
+        Intent intent = new Intent(this, AddDrinkActivity.class);
+        startActivity(intent);
+
+    }
 }

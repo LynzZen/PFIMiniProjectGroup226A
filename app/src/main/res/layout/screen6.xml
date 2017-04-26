@@ -13,6 +13,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:background="@color/colorPrimaryDark"
+        android:onClick="ShowOrders"
         android:text="View orders"
         android:textColor="@android:color/background_light"
         android:visibility="visible"
