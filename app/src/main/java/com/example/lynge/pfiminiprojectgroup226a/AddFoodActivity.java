@@ -10,7 +10,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class AddFoodActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-
+    static String FoodMain,FoodSide;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +24,7 @@ public class AddFoodActivity extends AppCompatActivity implements AdapterView.On
         startActivity(intent);
     }
     public void add(View view){
-        OrderHandleActivity.Food += "Beef"+"\n+Pommes frites"+"\n";
+        OrderHandleActivity.Food += FoodMain+"\n"+"+ "+FoodSide;
         Intent intent = new Intent(this, OrderHandleActivity.class);
         startActivity(intent);
     }
@@ -47,9 +47,31 @@ public class AddFoodActivity extends AppCompatActivity implements AdapterView.On
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String item = parent.getItemAtPosition(position).toString();
-        //Toast.makeText(parent.getContext(),item,Toast.LENGTH_SHORT).show();
+        String Tjek = parent.getItemAtPosition(position).toString();
+        Spinner spinner = (Spinner) parent;
+        if(spinner.getId() == R.id.FoodTypeSpinner)
+        {
+            if(!Tjek.equals("Main Order")){
+                FoodMain = parent.getItemAtPosition(position).toString();
+            }
+            else{
+                FoodMain = "--";
+                FoodSide = "";
+            }
+
+        }
+        else if(spinner.getId() == R.id.FoodSizeSpinner)
+        {
+            if(!Tjek.equals("Side Order")) {
+                FoodSide = parent.getItemAtPosition(position).toString();
+            }
+            else{
+                FoodMain = "--";
+                FoodSide = "";
+            }
+        }
     }
+
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {

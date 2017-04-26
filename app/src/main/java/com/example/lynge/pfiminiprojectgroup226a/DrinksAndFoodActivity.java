@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
+/*/
 public class DrinksAndFoodActivity extends AppCompatActivity {
     //Declaring
     EditText Drink, Food, Table;
@@ -68,3 +68,4 @@ public class DrinksAndFoodActivity extends AppCompatActivity {
     }
 
 }
+/*/

@@ -53,17 +53,31 @@ public class AddDrinkActivity extends AppCompatActivity implements AdapterView.O
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String Tjek = parent.getItemAtPosition(position).toString();
         Spinner spinner = (Spinner) parent;
-      if(spinner.getId() == R.id.DrinkTypeSpinner)
+
+        if(spinner.getId() == R.id.DrinkTypeSpinner)
         {
-            DrinkType = parent.getItemAtPosition(position).toString();
+            if(!Tjek.equals("Type")) {
+                DrinkType = parent.getItemAtPosition(position).toString();
+            }
+            else{
+                DrinkType="--";
+                DrinkSize="";
+            }
+
         }
         else if(spinner.getId() == R.id.DrinkSizeSpinner)
         {
-            DrinkSize = parent.getItemAtPosition(position).toString();
+            if(!Tjek.equals("Size")) {
+                DrinkSize = parent.getItemAtPosition(position).toString();
+            }
+            else{
+                DrinkType="--";
+                DrinkSize="";
+            }
+
         }
-
-
     }
 
     @Override

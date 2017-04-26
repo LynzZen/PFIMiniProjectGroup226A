@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         //Puts the text from the textfield for table number into a String
         String TableNUmber = TableNumber.getText().toString();
 
+        //Resets all the Static variables inside of OrderHandleActivity
+        OrderHandleActivity.Drink="";
+        OrderHandleActivity.Food ="";
         //Checks if the textfield is empty
 
         if(TableNUmber.length()>0) {
