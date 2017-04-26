@@ -36,13 +36,14 @@ public class DataBaseHandler extends SQLiteOpenHelper {
         Log.e("DATABASE OPERATIONS","Table created...");
 
     }
-    //Adds the information into our database
+    //Adds the information into our database in one row
     public void addInformations(String table, String drink, String food, SQLiteDatabase db){
         ContentValues contentValues = new ContentValues();
         contentValues.put(Order.NewOrderInfo.TABLE_NUMBER, table);
         contentValues.put(Order.NewOrderInfo.DRINK_TYPE, drink);
         contentValues.put(Order.NewOrderInfo.FOOD_TYPE, food);
         db.insert(Order.NewOrderInfo.TABLE_NAME, "Nothing", contentValues);
+
 
         //Writes to the log
         Log.e("DATABASE OPERATIONS","One row inserted...");

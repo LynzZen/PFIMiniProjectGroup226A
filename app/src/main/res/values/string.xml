@@ -17,7 +17,7 @@
     </string-array>
 
     <string-array name="food_type_array">
-        <item>Meat</item>
+        <item>Main Order</item>
         <item>Steak</item>
         <item>Chicken</item>
         <item>Pork</item>

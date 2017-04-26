@@ -12,7 +12,6 @@
         <activity android:name=".LogInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -20,7 +19,8 @@
         <activity android:name=".DataListActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".AddDrinkActivity" />
-        <activity android:name=".AddFoodActivity"></activity>
+        <activity android:name=".AddFoodActivity">
+        </activity>
     </application>
 
 </manifest>
