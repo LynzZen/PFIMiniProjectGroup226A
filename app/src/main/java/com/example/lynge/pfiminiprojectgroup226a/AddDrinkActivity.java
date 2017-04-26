@@ -17,13 +17,13 @@ public class AddDrinkActivity extends AppCompatActivity implements AdapterView.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.screen4);
 
-
-
+        //Call the two methods for type spinner
         SpinnerDrinkType();
         SpinnerDrinkSize();
     }
 
     public void skip(View view) {
+        OrderHandleActivity.Drink = "Cola 0.5l";
         Intent intent = new Intent(this, AddFoodActivity.class);
         startActivity(intent);
     }

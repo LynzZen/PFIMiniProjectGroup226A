@@ -19,6 +19,7 @@ public class AddFoodActivity extends AppCompatActivity implements AdapterView.On
         SpinnerFoodSize();
     }
     public void skip(View view){
+        OrderHandleActivity.Food = "Beef"+"\n+Pommes frites";
         Intent intent = new Intent(this, OrderHandleActivity.class);
         startActivity(intent);
     }
