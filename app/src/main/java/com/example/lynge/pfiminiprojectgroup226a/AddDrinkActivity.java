@@ -10,7 +10,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 public class AddDrinkActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-
+    static String DrinkSize,DrinkType;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class AddDrinkActivity extends AppCompatActivity implements AdapterView.O
     }
 
     public void skip(View view) {
-        OrderHandleActivity.Drink += "Cola 0.5l"+"\n";
+        OrderHandleActivity.Drink += (DrinkType+" "+DrinkSize);
         Intent intent = new Intent(this, AddFoodActivity.class);
         startActivity(intent);
     }
@@ -53,8 +53,17 @@ public class AddDrinkActivity extends AppCompatActivity implements AdapterView.O
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        String item = parent.getItemAtPosition(position).toString();
-        //Toast.makeText(parent.getContext(),item,Toast.LENGTH_SHORT).show();
+        Spinner spinner = (Spinner) parent;
+      if(spinner.getId() == R.id.DrinkTypeSpinner)
+        {
+            DrinkType = parent.getItemAtPosition(position).toString();
+        }
+        else if(spinner.getId() == R.id.DrinkSizeSpinner)
+        {
+            DrinkSize = parent.getItemAtPosition(position).toString();
+        }
+
+
     }
 
     @Override

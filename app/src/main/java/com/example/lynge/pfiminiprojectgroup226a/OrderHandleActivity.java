@@ -16,7 +16,7 @@ public class OrderHandleActivity extends AppCompatActivity {
     Context context = this;
     DataBaseHandler mDataBaseHandler;
     SQLiteDatabase mSQLiteDatabase;
-    static String Drink,Food,TableNumber = "";
+    static String Drink,Food,TableNumber;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_handle);
