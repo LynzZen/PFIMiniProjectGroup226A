@@ -19,7 +19,7 @@ public class AddFoodActivity extends AppCompatActivity implements AdapterView.On
         SpinnerFoodSize();
     }
     public void skip(View view){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, OrderHandleActivity.class);
         startActivity(intent);
     }
     //Adds items to the type spinner from values/string

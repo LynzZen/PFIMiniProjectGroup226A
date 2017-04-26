@@ -16,7 +16,10 @@
         app:srcCompat="@drawable/picture"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintHorizontal_bias="0.502" />
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.00999999" />
 
     <Button
         android:id="@+id/button6"
@@ -51,19 +54,6 @@
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintHorizontal_bias="1.0" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232"
-        app:srcCompat="@drawable/coca_cola_png8899" />
 
     <TextView
         android:id="@+id/textView2"
@@ -118,7 +108,18 @@
         app:layout_constraintVertical_bias="0.769"
         tools:layout_editor_absoluteY="355dp" />
 
-
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="132dp"
+        android:layout_height="246dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012"
+        app:srcCompat="@drawable/cocacola_glass" />
 
 
 </android.support.constraint.ConstraintLayout>

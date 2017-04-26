@@ -19,6 +19,7 @@
         <activity android:name=".DataListActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".AddDrinkActivity" />
+        <activity android:name=".OrderHandleActivity" />
         <activity android:name=".AddFoodActivity">
         </activity>
     </application>
