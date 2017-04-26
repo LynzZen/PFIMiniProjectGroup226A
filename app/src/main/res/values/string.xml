@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="drink_type_array">
+        <item>Type</item>
         <item>Cola</item>
         <item>Cola Zero</item>
         <item>Fanta</item>
@@ -9,10 +10,25 @@
     </string-array>
 
     <string-array name="drink_size_array">
+        <item>Size</item>
         <item>0.25 l.</item>
         <item>0.50 l.</item>
         <item>0.75 l.</item>
     </string-array>
+
+    <string-array name="food_type_array">
+        <item>Meat</item>
+        <item>Steak</item>
+        <item>Chicken</item>
+        <item>Pork</item>
+    </string-array>
+
+    <string-array name="food_size_array">
+        <item>Side Order</item>
+        <item>Pommes Frites</item>
+        <item>Onion rings</item>
+    </string-array>
+
 
 
 
