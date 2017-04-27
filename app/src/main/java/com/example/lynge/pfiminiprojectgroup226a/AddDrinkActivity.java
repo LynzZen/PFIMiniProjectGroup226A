@@ -6,24 +6,32 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class AddDrinkActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    static String DrinkSize,DrinkType;
+    static String DrinkSize,DrinkType,DrinkComment;
+    EditText drinkComment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.screen4);
-
+        drinkComment = (EditText) findViewById(R.id.CommentDrinks);
         //Call the two methods for type spinner
         SpinnerDrinkType();
         SpinnerDrinkSize();
     }
 
     public void skip(View view) {
-        OrderHandleActivity.Drink += (DrinkType+" "+DrinkSize);
+        DrinkComment = drinkComment.getText().toString();
+        if(drinkComment.length()>0){
+            OrderHandleActivity.Drink += (DrinkType+" "+DrinkSize+"\n// "+DrinkComment+"\n\n");
+        }
+        else{
+            OrderHandleActivity.Drink += (DrinkType+" "+DrinkSize+"\n\n");
+        }
         Intent intent = new Intent(this, AddFoodActivity.class);
         startActivity(intent);
     }

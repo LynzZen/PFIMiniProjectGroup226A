@@ -103,11 +103,11 @@
         android:layout_height="246dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.050000012"
+        app:layout_constraintVertical_bias="0.07999998"
         app:srcCompat="@drawable/cocacola_glass" />
 
     <Button
@@ -127,22 +127,27 @@
         app:layout_constraintHorizontal_bias="0.267" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/CommentDrinks"
         android:layout_width="262dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="370dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Additional Comments"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textIsSelectable="false"
+        android:textSize="14sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5"
-        app:layout_constraintHorizontal_bias="0.5" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Commenttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="352dp" />
 
 
 </android.support.constraint.ConstraintLayout>
